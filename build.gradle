@@ -1,0 +1,17 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "io.ratpack:ratpack-gradle:1.9.0"
+  }
+}
+
+apply plugin: "io.ratpack.ratpack-groovy"
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+  runtime "org.slf4j:slf4j-simple:1.7.30"
+}
