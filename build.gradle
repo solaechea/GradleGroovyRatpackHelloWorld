@@ -15,3 +15,10 @@ repositories {
 dependencies {
   runtime "org.slf4j:slf4j-simple:1.7.30"
 }
+
+run {
+  systemProperty "app.dbPassword", "secret"
+  jvmArgs(
+    '-Dratpackpull_csv_path=/opt/prominic/.ratpackpull',
+    '-Dvarname=varvalue')
+}
